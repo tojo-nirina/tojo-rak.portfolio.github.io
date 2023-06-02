@@ -725,4 +725,10 @@ footer a:hover {
     #about {
         margin-top: -30px;
     }
+    .expertise_container .competences{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        gap: 30px;
+    }
 }
