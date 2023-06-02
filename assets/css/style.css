@@ -235,6 +235,9 @@ nav .name:hover {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px #7562E0 solid;
 }
 .expertise_container .competences .logo img {
     transition: width 1s;
@@ -729,6 +732,6 @@ footer a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         text-align: center;
-        gap: 30px;
+        gap: 0;
     }
 }
