@@ -219,7 +219,7 @@ nav .name:hover {
     color: #7562E0;
 }
 /******************class="expertise_container"*****************/
-.frame {
+#expertise {
     position: relative;
     top: 140px;
     margin-top: 50px;
@@ -534,12 +534,6 @@ footer a:hover {
     #home .presentation p {
         width: 500px;
     }
-    /*.expertise_container .competences {*/
-    /*    display: grid;*/
-    /*    grid-template-columns: 1fr 1fr;*/
-    /*    gap: 30px;*/
-    /*}*/
-
     .mon_projet {
         grid-template-columns: 1fr 1fr;
     }
@@ -694,14 +688,14 @@ footer a:hover {
     .logo h4 {
         font-size: 12px;
     }
-    /*.expertise_container .competences {*/
-    /*    grid-template-columns:  1fr;*/
-    /*}*/
 }
 @media screen and (max-width: 400px) {
+    .menu li a {
+        font-size: 12px;
+    }
     #home .my-profil img {
-        width: 200px;
-        height: 265px;
+        width: 240px;
+        height: 240px;
         background: #7562E0;
         border-radius: 100%;
     }
@@ -710,14 +704,39 @@ footer a:hover {
         margin-top: 20px;
         border-radius: 10px;
     }
+    .mon_projet {
+        gap: 0;
+    }
+    .mon_projet .project {
+        margin-top: 15px;
+    }
+    .mon_projet .button {
+        gap: 0;
+    }
+    .mon_projet .button .btn_second{
+        margin-left: 5px;
+    }
     .expertise_container .competences .logo img {
-        width: 100px;
+        width: 90px;
+        margin-top: 20px;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .expertise_container {
+       background: none;
     }
     .logo h4 {
         font-size: 18px;
     }
     .expertise_container .competences .algo img {
         width: 130px;
+    }
+    .expertise_container .competences{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 0;
     }
     #home .epilise {
         width: 230px;
@@ -741,12 +760,10 @@ footer a:hover {
         background: none;
     }
     #about {
-        margin-top: -30px;
+        margin-top: -60px;
     }
-    .expertise_container .competences{
-        display: grid;
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 0;
+    .icon img {
+        width: 28px;
+        height: 28px;
     }
 }
