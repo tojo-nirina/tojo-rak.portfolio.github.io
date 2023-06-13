@@ -55,7 +55,6 @@ nav .name {
 nav .name:hover {
     font-size: 35px;
     cursor: pointer;
-    color: #230bac;
 }
 .menu {
     display: flex;
@@ -182,7 +181,6 @@ nav .name:hover {
     background: #181824;
 }
 /***About me***/
-
 #about {
     position: relative;
     top: 125px;
