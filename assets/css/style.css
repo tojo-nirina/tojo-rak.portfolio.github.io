@@ -273,15 +273,7 @@ nav .name:hover {
     height: 130px;
     object-fit: cover;
 }
-.mon_projet .image_hover {
-    display: none;
-}
-.mon_projet .image:hover .image_hover{
-    display: block;
-}
-.mon_projet .image:hover .image_active{
-    display: none;
-}
+
 .mon_projet .project {
     width: 100%;
     border: 1px #7562E0 solid;
