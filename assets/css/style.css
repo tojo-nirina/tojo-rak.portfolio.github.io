@@ -512,7 +512,7 @@ footer a:hover {
         gap: 0;
     }
     .rectangle {
-        top: 869px;
+        top: 935px;
     }
     #home .my-profil img {
         left: 0;
@@ -627,6 +627,18 @@ footer a:hover {
     .mon_projet img {
         height: 230px;
     }
+    #home .my-profil img {
+        width: 100%;
+        height: 465px;
+        background: #7562E0;
+        border-radius: 20px;
+    }
+    .rectangle {
+        display: none;
+    }
+    #home .epilise {
+        background: none;
+    }
 }
 @media screen and (max-width: 567px) {
     .expertise_container {
@@ -658,17 +670,6 @@ footer a:hover {
     #home h1 {
         font-size: 30px;
     }
-    #home .epilise {
-        width: 320px;
-        height: 320px;
-    }
-    #home .my-profil img {
-        width: 295px;
-        height: 352px;
-    }
-    .rectangle {
-        top: 815px;
-    }
     .expertise_container .competences{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -678,16 +679,18 @@ footer a:hover {
     .logo h4 {
         font-size: 12px;
     }
+    .rectangle {
+        top: 885px;
+    }
 }
 @media screen and (max-width: 400px) {
     .menu li a {
         font-size: 12px;
     }
     #home .my-profil img {
-        width: 240px;
-        height: 240px;
+        height: auto;
         background: #7562E0;
-        border-radius: 100%;
+        border-radius: 20px;
     }
     .expertise_container .competences .logo {
         height: 180px;
@@ -733,7 +736,6 @@ footer a:hover {
         height: 230px;
     }
     .rectangle {
-        top: 765px;
         height: 75px;
     }
     #home .hello {
@@ -755,5 +757,8 @@ footer a:hover {
     .icon img {
         width: 28px;
         height: 28px;
+    }
+    footer .liste a {
+         font-size: 14px;
     }
 }
