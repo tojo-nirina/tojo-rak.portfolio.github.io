@@ -42,9 +42,11 @@ nav {
    align-items: center;
 }
 nav .name {
+    background: linear-gradient( to right, #7562E0, #9389c2, #FFFFFF);
+    -webkit-background-clip: text;
+    color: transparent;
     width: 196px;
     height: 42px;
-    color: #7562E0;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -124,7 +126,14 @@ nav .name:hover {
     font-style: normal;
     font-weight: 600;
     font-size: 38px;
-    color: #7562E0;
+    background: linear-gradient( to right, #7562E0, #6b5eac, #cfcfd2);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#home span {
+    background: linear-gradient( to right, #7562E0, #6b5eac, #cfcfd2);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 #home a {
     font-style: normal;
@@ -157,6 +166,7 @@ nav .name:hover {
     border-radius: 100%;
 }
 #home .about-me-button {
+    background: #7562E0;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -164,9 +174,11 @@ nav .name:hover {
     gap: 10px;
     width: 210px;
     height: 48px;
-    background: #7562E0;
     border-radius: 8px;
     margin-top: 39px;
+}
+#home .about-me-button:hover {
+    background: linear-gradient(108.35deg, #7562E0 -36.03%, #cfcfd2 128.44%);
 }
 #home .about-me-button img {
     width: 20px;
@@ -214,7 +226,14 @@ nav .name:hover {
     font-weight: 600;
     font-size: 32px;
     line-height: 48px;
-    color: #7562E0;
+    background: linear-gradient( to right, #7562E0,#ffff, #ffff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#title {
+    background: linear-gradient( to right, #7562E0,#6b5eac, #ffff);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 /******************expertise_container*****************/
 #expertise {
@@ -261,6 +280,9 @@ nav .name:hover {
 #projects p{
     margin-top: 10px;
 }
+#projects .description {
+    height: 120px;
+}
  .mon_projet {
     padding: 30px 0;
      display: grid;
@@ -271,7 +293,6 @@ nav .name:hover {
     border-radius: 10px;
     width: 100%;
     height: 130px;
-    object-fit: cover;
 }
 
 .mon_projet .project {
@@ -288,17 +309,19 @@ nav .name:hover {
     display: flex;
     gap: 10px;
 }
-.mon_projet .button .btn_prima, .btn_second{
-    background: none;
+.mon_projet .button img {
+   width: 22px;
+    height: 22px;
+}
+.mon_projet .button .btn{
+    background: #3b3737;
     width: 100%;
     height: 40px;
     border: none;
-}
-.mon_projet .button .btn_prima, .btn_second{
-    background: #3b3737;
-    width: 100%;
-    border: none;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mon_projet button a {
     text-decoration: none;
@@ -329,6 +352,9 @@ form {
 #contact .submit {
     width: 40%;
     background: #7562E0;
+}
+#contact .submit:hover {
+    background: linear-gradient(108.35deg, #7562E0 -36.03%, #cfcfd2 128.44%);
 }
 #contact textarea {
     width: 100%;
@@ -362,19 +388,16 @@ textarea::placeholder {
 /******footer*****/
 footer {
     position: relative;
-    top: 380px;
+    top: 350px;
     padding: 0 136px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
-footer .liste {
+.gmail {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    padding-bottom: 50px;
 }
-
-.small-paragraph {
+.gmail a {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -527,16 +550,6 @@ footer a:hover {
     .mon_projet {
         grid-template-columns: 1fr 1fr;
     }
-    footer {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-    footer .liste {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-    }
         /* ****toggle**** */
     .toggle {
         display: block;
@@ -599,6 +612,9 @@ footer a:hover {
         text-align: center;
         gap: 20px;
     }
+    .gmail {
+       display: grid;
+    }
 }
 @media screen and (max-width: 700px) {
     nav {
@@ -624,9 +640,6 @@ footer a:hover {
     .mon_projet {
         grid-template-columns: 1fr;
     }
-    .mon_projet img {
-        height: 230px;
-    }
     #home .my-profil img {
         width: 100%;
         height: 465px;
@@ -643,12 +656,6 @@ footer a:hover {
 @media screen and (max-width: 567px) {
     .expertise_container {
         padding: 20px 0;
-    }
-    footer {
-        top: 220px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
     }
     nav {
         padding: 14px 14px!important;
@@ -732,7 +739,7 @@ footer a:hover {
         gap: 0;
     }
     #home .epilise {
-        width: 230px;
+        width: 260px;
         height: 230px;
     }
     .rectangle {
@@ -751,14 +758,11 @@ footer a:hover {
     #home .epilise {
         background: none;
     }
-    #about {
-        margin-top: -60px;
-    }
     .icon img {
         width: 28px;
         height: 28px;
     }
-    footer .liste a {
+    footer .gmail a {
          font-size: 14px;
     }
 }
