@@ -35,16 +35,14 @@ header {
 }
 nav {
     padding: 19px 160px;
-   width: 100%;
-   height: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 nav .name {
-    background: linear-gradient( to right, #7562E0, #9389c2, #FFFFFF);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #7562E0;
     width: 196px;
     height: 42px;
     font-style: normal;
@@ -126,14 +124,7 @@ nav .name:hover {
     font-style: normal;
     font-weight: 600;
     font-size: 38px;
-    background: linear-gradient( to right, #7562E0, #6b5eac, #cfcfd2);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-#home span {
-    background: linear-gradient( to right, #7562E0, #6b5eac, #cfcfd2);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #7562E0;
 }
 #home a {
     font-style: normal;
@@ -169,19 +160,13 @@ nav .name:hover {
     background: #7562E0;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     padding: 12px 25px;
-    gap: 10px;
-    width: 210px;
+    gap: 16px;
+    width: 250px;
     height: 48px;
     border-radius: 8px;
     margin-top: 39px;
-}
-#home .about-me-button:hover {
-    background: linear-gradient(108.35deg, #7562E0 -36.03%, #cfcfd2 128.44%);
-}
-#home .about-me-button img {
-    width: 20px;
 }
 /*rectangle*/
 .rectangle {
@@ -226,16 +211,9 @@ nav .name:hover {
     font-weight: 600;
     font-size: 32px;
     line-height: 48px;
-    background: linear-gradient( to right, #7562E0,#ffff, #ffff);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #7562E0;
 }
-#title {
-    background: linear-gradient( to right, #7562E0,#6b5eac, #ffff);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-/******************expertise_container*****************/
+/***expertise_container***/
 #expertise {
     position: relative;
     top: 140px;
@@ -271,7 +249,7 @@ nav .name:hover {
     text-align: center;
     gap: 20px;
 }
-/*****************projet******************/
+/***projet***/
 #projects {
     position: relative;
     top: 130px;
@@ -283,37 +261,37 @@ nav .name:hover {
 #projects .description {
     height: 120px;
 }
- .mon_projet {
+.my-project {
     padding: 30px 0;
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
      gap: 20px;
 }
- .mon_projet  img{
+.my-project  img{
     border-radius: 10px;
     width: 100%;
-    height: 130px;
+    height: 230px;
+    object-fit: cover;
 }
-
-.mon_projet .project {
+.my-project .project {
     width: 100%;
     border: 1px #7562E0 solid;
     border-radius: 10px;
     padding: 10px;
 }
-.mon_projet .project .description {
+.my-project .project .description {
     text-align: center;
     padding: 10px 0;
 }
-.mon_projet .button {
+.my-project .button {
     display: flex;
     gap: 10px;
 }
-.mon_projet .button img {
+.my-project .button img {
    width: 22px;
     height: 22px;
 }
-.mon_projet .button .btn{
+.my-project .button .btn{
     background: #3b3737;
     width: 100%;
     height: 40px;
@@ -323,10 +301,13 @@ nav .name:hover {
     justify-content: center;
     align-items: center;
 }
-.mon_projet button a {
+.my-project button a {
     text-decoration: none;
 }
-/*****contact*****/
+.my-project .button *{
+    color: #7562E0;
+}
+/***contact***/
 #contact {
     padding: 2px 220px 0 136px;
     position: relative;
@@ -348,13 +329,11 @@ form {
     padding: 15px;
     background: #31313F;
     border: none;
+    outline: none;
 }
 #contact .submit {
     width: 40%;
     background: #7562E0;
-}
-#contact .submit:hover {
-    background: linear-gradient(108.35deg, #7562E0 -36.03%, #cfcfd2 128.44%);
 }
 #contact textarea {
     width: 100%;
@@ -364,6 +343,7 @@ form {
     padding: 15px;
     background: #31313F;
     border: none;
+    outline: none;
 }
 #contact label {
     position: absolute;
@@ -385,7 +365,7 @@ textarea::placeholder {
     font-weight: 600;
     margin-top: 20px;
 }
-/******footer*****/
+/****footer***/
 footer {
     position: relative;
     top: 350px;
@@ -404,6 +384,10 @@ footer {
     color: #FFFFFF;
     opacity: 0.5;
 }
+.gmail .icon * {
+    font-size: 22px;
+    color: #7562E0;
+}
 footer a:hover {
     text-decoration: underline;
 }
@@ -411,7 +395,7 @@ footer a:hover {
 .toggle {
     display: none;
 }
-/*****************responsive***********/
+/****responsive****/
 @media screen and (max-width: 1920px) {
     nav {
         padding: 19px 210px;
@@ -521,7 +505,7 @@ footer a:hover {
     #home .presentation p {
         width: 400px;
     }
-    .mon_projet button a {
+    .my-project button a {
         font-size: 11px;
     }
 }
@@ -547,7 +531,7 @@ footer a:hover {
     #home .presentation p {
         width: 500px;
     }
-    .mon_projet {
+    .my-project {
         grid-template-columns: 1fr 1fr;
     }
         /* ****toggle**** */
@@ -591,8 +575,8 @@ footer a:hover {
     nav .logo img{
         width: 100px;
     }
-    nav .toggle img{
-        width: 20px;
+    nav .toggle .ouvrir, .fermer{
+       font-size: 30px;
     }
 }
 @media screen and (max-width: 800px) {
@@ -637,7 +621,7 @@ footer a:hover {
     #home .presentation p {
         width: 100%;
     }
-    .mon_projet {
+    .my-project {
         grid-template-columns: 1fr;
     }
     #home .my-profil img {
@@ -704,16 +688,16 @@ footer a:hover {
         margin-top: 20px;
         border-radius: 10px;
     }
-    .mon_projet {
+    .my-project {
         gap: 0;
     }
-    .mon_projet .project {
+    .my-project .project {
         margin-top: 15px;
     }
-    .mon_projet .button {
+    .my-project .button {
         gap: 0;
     }
-    .mon_projet .button .btn_second{
+    .my-project .button .btn_second{
         margin-left: 5px;
     }
     .expertise_container .competences .logo img {
