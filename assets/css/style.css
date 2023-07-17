@@ -270,7 +270,7 @@ nav .name:hover {
 .my-project  img{
     border-radius: 10px;
     width: 100%;
-    height: 230px;
+    height:200px;
     object-fit: cover;
 }
 .my-project .project {
@@ -748,5 +748,8 @@ footer a:hover {
     }
     footer .gmail a {
          font-size: 14px;
+    }
+    .text-box .button2 .texte {
+        font-size: 50px!important;
     }
 }
