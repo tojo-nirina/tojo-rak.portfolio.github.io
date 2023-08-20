@@ -19,17 +19,14 @@ body {
     font-style: normal;
 }
 
-p {
-    font-size: 15px;
-}
-
-a {
-    text-decoration: none;
-}
-
+p { font-size: 15px;}
+   
+a {text-decoration: none;}
+    
 section {
   max-width: 80%;
   margin: auto;
+  margin-top: 70px;
 }
 
 header {
@@ -42,10 +39,8 @@ header {
     z-index: 2;
 }
 
-.toggle {
-    display: none;
-}
-
+.toggle { display: none;}
+   
 nav {
     max-width: 80%;
     margin: auto;
@@ -70,10 +65,8 @@ nav .name {
     cursor: pointer;
 }
 
-nav .name:hover {
-    transform: scale(1.1);
-}
-
+nav .name:hover {transform: scale(1.1);}
+    
 .menu {
     display: flex;
     justify-content: space-between;
@@ -102,10 +95,8 @@ nav .name:hover {
     display: none;
 }
 
-.menu li a:hover::after {
-    display: block;
-}
-
+.menu li a:hover::after {display: block;}
+    
 .menu li a:hover {
     transform: scale(2.08);
     color: #7562E0;
@@ -170,8 +161,8 @@ nav .name:hover {
 
 #home .my-profil {
     position: relative;
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #home .my-profil img {
@@ -180,8 +171,6 @@ nav .name:hover {
     height: 470px;
     top: 0;
     left: 30px;
-    /* left: 40px;
-    top: -50px; */
 }
 
 #home .oval {
@@ -217,9 +206,6 @@ nav .name:hover {
 }
 
 /***About me***/
-#about {
-    margin-top: 30px;
-}
 
 #about .about-me {
     font-weight: 600;
@@ -228,10 +214,8 @@ nav .name:hover {
     color: #7562E0;
 }
 
-#about  p{
-    margin-top: 10px;
-}
-
+#about  p{ margin-top: 30px;}
+   
 #about .five-experience {
     display: flex;
     align-items: center;
@@ -258,15 +242,14 @@ nav .name:hover {
 }
 
 /***expertise***/
-#expertise {
-    margin-top: 50px;
-    display: grid;
-}
 
+#expertise { display: grid;}
+  
 .expertise_container {
     padding: 20px 10px;
     border-radius: 20px;
     background: #181824;
+    margin-top: 30px;
 }
 
 .competences{
@@ -283,7 +266,6 @@ nav .name:hover {
     gap: 15px;
     width: 100%;
     padding: 10px;
-    border: 1px #7562E0 solid;
     border-radius: 5px;
 }
 
@@ -300,18 +282,12 @@ nav .name:hover {
 }
 
 /***projet***/
-#projects {
-    margin-top: 50px;
-}
 
-#projects p{
-    margin-top: 10px;
-}
 
-#projects .description {
-    height: 120px;
-}
-
+#projects p{ margin-top: 30px;}
+   
+#projects .description {height: 120px;}
+    
 .my-project {
      padding: 30px 0;
      display: grid;
@@ -330,10 +306,8 @@ nav .name:hover {
     cursor: pointer;
 }
 
-.my-project  img:hover {
-    transform: scale(0.9);
-}
-
+.my-project  img:hover {transform: scale(0.9);}
+    
 .my-project .project {
     width: 100%;
     border: 1px #7562E0 solid;
@@ -366,29 +340,22 @@ nav .name:hover {
     align-items: center;
 }
 
-.my-project button a {
-    text-decoration: none;
-}
-
-.my-project .button *{
-    color: #7562E0;
-}
-
+.my-project button a {text-decoration: none;}
+    
+.my-project .button * {  color: #7562E0;}
+  
 /***contact***/
+
 #contact {
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
 }
 
-.contact-me {
-    width: 45%;
-}
-
-form {
-    gap: 16px;
-}
-
+.contact-me { width: 45%;}
+   
+form { gap: 16px;}
+   
 #contact input {
     width: 100%;
     height: 50px;
@@ -432,10 +399,8 @@ form {
     height: 32px;
 }
 
-input::placeholder {
-    font-weight: 600;
-}
-
+input::placeholder {font-weight: 600;}
+    
 textarea::placeholder {
     font-weight: 600;
     margin-top: 20px;
@@ -464,13 +429,10 @@ textarea::placeholder {
     color: #7562E0;
 }
 
-footer {
-    margin-top: 130px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
+footer { margin-top: 130px;}
+   
+footer a:hover {text-decoration: underline;}
+   
 
 /****responsive****/
 
@@ -481,35 +443,27 @@ footer a:hover {
         margin: auto;
     }
 
-    nav {
-        max-width: 90%;
-    }
-
-    #home h1 {
-        font-size: 40px;
-    }
-
-    #home .presentation p {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 1140px) {
-    #home h1 {
-        font-size: 35px;
-    }
-    #home .hello {
-        font-size: 28px;
-        line-height: 30px;
-    }
-    .my-project button a {
-        font-size: 11px;
-    }
+    nav { max-width: 90%;}
+       
+    .gmail {max-width: 90%; }
+        
+    #home h1 {font-size: 35px;}
+        
+    #home .presentation p {width: 90%; }
+        
+    #about {margin-top: 50px!important;}
+        
+    #expertise { margin-top: 50px!important;}
+       
+    #projects { margin-top: 50px!important; }
+       
+    .my-project button a {font-size: 11px;} 
 }
 
 @media screen and (max-width: 992px) {
+
     #home {
-        margin-top: 200px;
+        margin-top: 170px;
         display: flex;
         align-items: start;
         text-align: start;
@@ -523,18 +477,14 @@ footer a:hover {
         background: #7562E0;
         border-radius: 20px;
     }
-    .rectangle {
-        top: 0;
-    }
-
+    .rectangle { top: 0;}
+       
     #home .my-profil img {
         transform: translate(15px, 15px);
         top: 10px;
     }
-    #home .button {
-        display: flex;
-    }
-
+    #home .button {display: flex;}
+        
     #home .my-profil img {
         width: 300px;
         height: 370px;
@@ -544,28 +494,24 @@ footer a:hover {
         height: 395px;
     }
 
-    .my-project {
-        grid-template-columns: 1fr 1fr;
-    }
+    .my-project {grid-template-columns: 1fr 1fr; }
+        
         /* ****toggle**** */
+
     .toggle {
         display: block;
         cursor: pointer;
         position: relative;
         z-index: 20;
     }
-    .ouvrir {
-        display: block;
-    }
-    .fermer {
-        display: none;
-    }
-    .open .ouvrir {
-        display: none;
-    }
-    .open .fermer {
-        display: block;
-    }
+    .ouvrir {display: block;}
+        
+    .fermer {display: none;}
+        
+    .open .ouvrir {display: none; }
+        
+    .open .fermer {  display: block;}
+      
     .menu {
         position: absolute;
         top: 0;
@@ -581,16 +527,12 @@ footer a:hover {
         transform: translateX(100%);
         transition:transform 0.5s;
     }
-    .open .menu{
-        transform: translateX(0);
-    }
-    .flou {
-        filter: blur(8px);
-    }
-    nav .logo img{
-        width: 100px;
-    }
-
+    .open .menu {transform: translateX(0); }
+        
+    .flou { filter: blur(8px);}
+       
+    nav .logo img{width: 100px; }
+        
     nav .toggle .ouvrir, .fermer{
        font-size: 24px;
     }
@@ -602,13 +544,9 @@ footer a:hover {
         border-radius: 10px;
         text-align: center;
     }
-    section {
-        max-width: 90%;
-        margin: auto;
-    }
-    nav {
-        max-width: 90%;
-    }
+    
+    nav { max-width: 90%;}
+       
     #home .presentation p {
         width: 100%;
         margin: auto;
@@ -616,13 +554,14 @@ footer a:hover {
 }
 
 @media screen and (max-width: 828px) {
+
     #contact {
         display: flex;
         flex-direction: column;
         gap: 50px;
     }
     .contact-me {
-        width: 100%;
+        width: 90%!important;
     }
     .competences {
         display: grid;
@@ -630,9 +569,8 @@ footer a:hover {
         text-align: center;
         gap: 20px;
     }
-    .gmail {
-       display: grid;
-    }
+    .gmail {display: grid;}
+       
     #home {
         flex-direction: column;
         align-items: center;
@@ -641,18 +579,16 @@ footer a:hover {
     #home .button {
         justify-content: center;
     }
+    #home .oval {
+        top: 70px;
+        border-radius: 10px;
+    }
 }
 
 @media screen and (max-width: 756px) {
-    #about {
-        margin-top: 0;
-    }
-    .my-project {
-        grid-template-columns: 1fr;
-    }
-    .rectangle {
-        display: none;
-    }
+
+    .my-project {grid-template-columns: 1fr; }
+        
     #home .presentation p {
         width: 90%;
         margin: auto;
@@ -660,41 +596,40 @@ footer a:hover {
 }
 
 @media screen and (max-width: 576px) {
+
     .menu {
         width: 100%;
         align-items: center;
     }
 
-    section {
-        max-width: 95%;
-        margin: auto;
-    }
-    nav {
-        max-width: 95%;
-        margin: auto;
-    }
+    section { max-width: 95%; }
+       
+    nav { max-width: 95%; }
+       
+    .gmail {max-width: 90%; }
+        
     .competences{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
         gap: 30px;
     }
-    #home h1 {
-        font-size: 30px;
-    }
-    .logo h4 {
-        font-size: 12px;
-    }
+    
+    .logo h4 {font-size: 12px;}
+        
     #home .presentation p {
         width: 100%;
         margin: auto;
     }
     .title {
+        font-size: 25px;
+        line-height: 40px;
         text-align: center;
     }
-    .about-presentation {
-        margin-top: 30px;
-    }
+    .about-presentation {margin-top: 30px;}
+        
+    #contact .title { text-align: start; }
+       
 }
 
 @media screen and (max-width: 400px) {
@@ -715,75 +650,52 @@ footer a:hover {
         max-width: 90%;
         margin: auto;
     }
-    .my-profil {
-        width: 100%;
-    }
-    .menu li a {
-        font-size: 12px;
-    }
+    .my-profil { width: 100%;}
+       
+    .menu li a {font-size: 12px;}
+        
     .competences .logo {
         height: 155px;
         margin-top: 20px;
         border-radius: 10px;
     }
-    .my-project {
-        gap: 0;
-    }
-    .my-project .project {
-        margin-top: 15px;
-    }
-    .my-project .button {
-        gap: 0;
-    }
-    .my-project .button .btn_second{
-        margin-left: 5px;
-    }
-    .competences .logo img {
-        width: 90px;
-
-    }
-    .title {
-        font-size: 22px;
-    }
-    .expertise_container {
-       background: none;
-    }
-    .logo h4 {
-        font-size: 18px;
-    }
-    .competences .algo img {
-        width: 115px;
-    }
+    .my-project { gap: 0;}
+       
+    .my-project .project { margin-top: 15px;}
+       
+    .my-project .button { gap: 0;}
+       
+    .my-project .button .btn_second { margin-left: 5px;}
+       
+    .competences .logo img { width: 90px;}
+       
+    .expertise_container {background: none;}
+       
+    .logo h4 {font-size: 18px;}
+        
+    .competences .algo img { width: 115px;}
+       
     .competences{
         display: grid;
         grid-template-columns: 1fr 1fr;
         text-align: center;
         gap: 10px;
     }
-    .rectangle {
-        height: 75px;
-    }
     #home .hello {
-        font-size: 20px;
-        line-height: 20px;
+        font-size: 28px;
+        line-height: 38px;
     }
-    #home h1 {
-        font-size: 20px;
-    }
-    .rectangle {
-        display: none;
-    }
-    #home .epilise {
-        background: none;
-    }
+    #home h1 { font-size: 28px;}
+       
+    .rectangle {height: 85px; }
+        
+    #home .epilise {background: none; }
+        
     .icon img {
         width: 28px;
         height: 28px;
     }
-    footer .gmail a {
-         font-size: 14px;
-    }
-    .text-box .button2 .texte {
-        font-size: 50px!important;
-    }
+    footer .gmail a { font-size: 14px;}
+        
+    .text-box .button2 .texte { font-size: 50px!important;} 
 }

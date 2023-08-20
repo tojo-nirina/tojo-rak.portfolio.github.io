@@ -20,3 +20,5 @@ menuBtn.addEventListener("click", () => {
     sideMenu.classList.toggle("open");
     mainFlou.classList.toggle('flou');
 })
+
+
